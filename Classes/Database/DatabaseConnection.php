@@ -1298,6 +1298,7 @@ class DatabaseConnection
             'user' => $this->databaseUsername,
             'password' => $this->databaseUserPassword,
             'charset' => $this->connectionCharset,
+	        'ssl_ca' => $GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['ssl_ca'],
         ]);
 
         // Mimic the previous behavior of returning false on connection errors
